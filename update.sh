@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# https://github.com/unegma/bash-functions/blob/main/update.sh
+
 VERSION=""
 
 #get parameters
@@ -10,8 +12,15 @@ do
   esac
 done
 
-#get highest tag number
-CURRENT_VERSION=`git describe --abbrev=0 --tags`
+#get highest tag number, and add 1.0.0 if doesn't exist
+CURRENT_VERSION=`git describe --abbrev=0 --tags 2>/dev/null`
+
+if [[ $CURRENT_VERSION='' ]]
+then
+  CURRENT_VERSION='1.0.0'
+fi
+echo "Current Version: $CURRENT_VERSION"
+
 
 #replace . with space so can split into an array
 CURRENT_VERSION_PARTS=(${CURRENT_VERSION//./ })
