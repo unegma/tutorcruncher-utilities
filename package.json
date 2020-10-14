@@ -30,8 +30,8 @@
     "sinon-chai": "^3.5.0"
   },
   "dependencies": {
-    "node-fetch": "^2.6.1",
+    "@unegma/error-handler": "^1.0.14",
     "@unegma/utilities": "latest",
-    "@unegma/error-handler": "latest"
+    "node-fetch": "^2.6.1"
   }
 }
