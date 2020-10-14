@@ -3,6 +3,8 @@ Utility functions for interacting with TutorCruncher APIs
 
 ## Usage
 
+`npm install @unegma/tutorcruncher-utilities --save`
+
 ```
 const {
   TUTORCRUNCHER_KEY,
