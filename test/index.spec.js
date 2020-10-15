@@ -1,4 +1,3 @@
-require('dotenv').config({ path: '.env' });
 const SLACK_ERROR_LOG = 'https://example.com'
 const TUTORCRUNCHER_API_URL = 'https://secure.tutorcruncher.com/api'
 const chai = require('chai');
