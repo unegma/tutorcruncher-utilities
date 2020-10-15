@@ -12,7 +12,7 @@ const {
 } = process.env;
 const { LessonUtilities, ClientUtilities, JobUtilities,
   PaymentUtilities, BaseUtilities } = require('@unegma/tutorcruncher-utilities');
-const tCLib = new BaseUtilities(TUTORCRUNCHER_API_KEY); // with console loggin
+const tCLib = new BaseUtilities(TUTORCRUNCHER_API_KEY); // with console logging
 const tCLessonLib = new LessonUtilities(TUTORCRUNCHER_API_KEY, SLACK_ERROR_LOG); // with slack logging
 
 ...
