@@ -4,7 +4,10 @@
   "description": "Utility functions for interacting with TutorCruncher APIs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./test/index.spec.js",
+    "publish-minor": "./update.sh -v minor",
+    "publish-major": "./update.sh -v major",
+    "publish-patch": "./update.sh -v patch"
   },
   "repository": {
     "type": "git",
