@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha ./test/index.spec.js",
-    "publish-minor": "./update.sh -v minor",
-    "publish-major": "./update.sh -v major",
-    "publish-patch": "./update.sh -v patch"
+    "pub-minor": "./publish.sh -v minor",
+    "pub-major": "./publish.sh -v major",
+    "pub-patch": "./publish.sh -v patch"
   },
   "repository": {
     "type": "git",
