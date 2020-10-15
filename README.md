@@ -7,13 +7,13 @@ Utility functions for interacting with TutorCruncher APIs
 
 ```
 const {
-  TUTORCRUNCHER_KEY,
+  TUTORCRUNCHER_API_KEY,
   SLACK_ERROR_LOG
 } = process.env;
 const { LessonUtilities, ClientUtilities, JobUtilities,
   PaymentUtilities, BaseUtilities } = require('@unegma/tutorcruncher-utilities');
-const tCLib = new BaseUtilities(TUTORCRUNCHER_KEY, SLACK_ERROR_LOG);
-const tCLessonLib = new LessonUtilities(TUTORCRUNCHER_KEY, SLACK_ERROR_LOG);
+const tCLib = new BaseUtilities(TUTORCRUNCHER_API_KEY, SLACK_ERROR_LOG);
+const tCLessonLib = new LessonUtilities(TUTORCRUNCHER_API_KEY, SLACK_ERROR_LOG);
 
 ...
 // get all lessons
