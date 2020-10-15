@@ -1,11 +1,11 @@
-const SLACK_ERROR_LOG = 'https://example.com'
-const TUTORCRUNCHER_API_URL = 'https://secure.tutorcruncher.com/api'
+const SLACK_ERROR_LOG = 'https://example.com';
+const TUTORCRUNCHER_API_URL = 'https://secure.tutorcruncher.com/api';
 const chai = require('chai');
 const expect = chai.expect;
 const sinon = require('sinon');
 const sinonChai = require('sinon-chai');
 chai.use(sinonChai);
-const nock = require('nock')
+const nock = require('nock');
 const BaseUtilities = require('../lib/BaseUtilities');
 const TutorCruncherIntegrationError = require('../lib/errors/TutorCruncherIntegrationError');
 const UnhandledArraySizeError = require('../lib/errors/UnhandledArraySizeError');
