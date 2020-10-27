@@ -73,4 +73,12 @@ describe('Tutor Cruncher Utilities Test', () => {
 
   // todo add test for .next in url for get all from
 
+  it('should return an extra attribute value', async () => {
+    const baseUtilities = new BaseUtilities('12345');
+    const response = await baseUtilities.getAttValue([{machine_name: 'foo', value: 'bar'}], 'foo');
+    expect(response).to.equal('bar');
+    const response2 = await baseUtilities.getAttValue({machine_name: 'foo', value: 'bar'}, 'foo');
+    expect(response2).to.equal('bar');
+  });
+
 });
