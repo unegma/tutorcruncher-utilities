@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@unegma/error-handler": "^1.4.18",
-    "@unegma/utilities": "latest",
+    "@unegma/utilities": "^1.2.0",
     "node-fetch": "^2.6.1"
   }
 }
