@@ -116,10 +116,10 @@ describe('Recipient Utilities Test', () => {
   it('should get the academic year index', async () => {
     const tCRecUtil = new RecipientUtilities('12345');
     const response = await tCRecUtil.getAcademicYearIndex('Reception');
-    expect(response).to.equal(0);
+    expect(response).to.equal(1);
 
     const response2 = await tCRecUtil.getAcademicYearIndex('Year 13');
-    expect(response2).to.equal(13);
+    expect(response2).to.equal(14);
 
     const response3 = await tCRecUtil.getAcademicYearIndex('18+ Adult');
     expect(response3).to.equal(null);
