@@ -1,6 +1,6 @@
 {
   "name": "@unegma/tutorcruncher-utilities",
-  "version": "1.12.26",
+  "version": "1.13.26",
   "description": "Utility functions for interacting with TutorCruncher APIs",
   "main": "index.js",
   "scripts": {
