@@ -28,14 +28,14 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "dotenv": "^8.2.0",
-    "mocha": "^8.2.0",
-    "nock": "^13.0.4",
-    "sinon": "^9.0.3",
+    "mocha": "^8.2.1",
+    "nock": "^13.0.5",
+    "sinon": "^9.2.2",
     "sinon-chai": "^3.5.0"
   },
   "dependencies": {
-    "@unegma/error-handler": "^1.4.18",
-    "@unegma/utilities": "^1.2.0",
+    "@unegma/error-handler": "^1.4.21",
+    "@unegma/utilities": "^1.3.2",
     "node-fetch": "^2.6.1"
   }
 }
